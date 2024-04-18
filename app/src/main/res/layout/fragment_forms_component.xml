@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FormsComponent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:background="@drawable/rounded_left_b"
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="78dp"
+                android:layout_marginEnd="15dp"
+                android:text="Forms"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="Services"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:rowCount="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/brgyclearancebtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                app:cornerRadius="20dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/palePink"
+                android:textSize="20dp"
+                android:text="Barangay Clearance" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/barangayIndigency"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/palePink"
+                android:text="Barangay Indigency"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/complaintbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                app:cornerRadius="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/palePink"
+                android:text="Complaint" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/forms_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+</RelativeLayout>
+
+</ScrollView>

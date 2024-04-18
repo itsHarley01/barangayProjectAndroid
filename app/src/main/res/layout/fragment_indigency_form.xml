@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palePink"
+    tools:context=".IndigencyForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/lightBlue"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_vector"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Barangay Indigency"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Terms and Conditions: " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List out the specific terms and conditions that the user needs to agree to. This could include statements regarding:" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•Compliance with barangay regulations and laws." />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•Truthfulness and accuracy of information provided in the application." />
+
+            <TextView
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•Consent for barangay officials to verify the information provided." />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•Understanding that false information may lead to rejection of the application."
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree."/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name" />
+            <EditText
+                android:padding="5px"
+
+                android:id="@+id/edittext_first_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Middle Name" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_middle_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_last_name"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sex:" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/label_marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marital Status:" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single" />
+
+                <RadioButton
+                    android:id="@+id/radio_married"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Married" />
+
+                <RadioButton
+                    android:id="@+id/radio_divorced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Divorced" />
+
+                <RadioButton
+                    android:id="@+id/radio_widowed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Widowed" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_contact"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_email"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_address"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="50dp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/label_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purpose" />
+
+            <EditText
+                android:padding="5px"
+                android:id="@+id/edittext_reason"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_bg"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+            <Button
+                android:backgroundTint="@color/lightBlue"
+                android:layout_marginTop="20dp"
+                android:id="@+id/button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

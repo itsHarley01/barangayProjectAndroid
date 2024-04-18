@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.app.barangayguadalupe.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register"
+            app:enterAnim="@drawable/slide_left"
+            app:exitAnim="@drawable/slide_right"
+          />
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_login_to_forgotPassVerification"
+            app:destination="@id/forgotPassVerification" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.app.barangayguadalupe.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@drawable/slide_right2"
+            app:exitAnim="@drawable/slide_left2"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.app.barangayguadalupe.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_home2_to_barangayClearanceForm"
+            app:destination="@id/barangayClearanceForm" />
+        <action
+            android:id="@+id/action_home2_to_complaint"
+            app:destination="@id/complaint" />
+        <action
+            android:id="@+id/action_home2_to_userProfile"
+            app:destination="@id/userProfile" />
+        <action
+            android:id="@+id/action_home2_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_home2_to_contactUs"
+            app:destination="@id/contactUs" />
+        <action
+            android:id="@+id/action_home2_to_indigencyForm"
+            app:destination="@id/indigencyForm" />
+    </fragment>
+    <fragment
+        android:id="@+id/barangayClearanceForm"
+        android:name="com.app.barangayguadalupe.BarangayClearanceForm"
+        android:label="fragment_complaint"
+        tools:layout="@layout/fragment_complaint" >
+        <action
+            android:id="@+id/action_barangayClearanceForm_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/complaint"
+        android:name="com.app.barangayguadalupe.Complaint"
+        android:label="Complaint" >
+        <action
+            android:id="@+id/action_complaint_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassVerification"
+        android:name="com.app.barangayguadalupe.ForgotPassVerification"
+        android:label="fragment_forgot_pass2">
+        <action
+            android:id="@+id/action_forgotPassVerification_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.app.barangayguadalupe.userProfile"
+        android:label="userProfile" >
+        <action
+            android:id="@+id/action_userProfile_to_editUserProfile"
+            app:destination="@id/editUserProfile" />
+        <action
+            android:id="@+id/action_userProfile_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserProfile"
+        android:name="com.app.barangayguadalupe.EditUserProfile"
+        android:label="EditUserProfile" >
+        <action
+            android:id="@+id/action_editUserProfile_to_userProfile"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.app.barangayguadalupe.aboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUs"
+        android:name="com.app.barangayguadalupe.ContactUs"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" >
+        <action
+            android:id="@+id/action_contactUs_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/indigencyForm"
+        android:name="com.app.barangayguadalupe.IndigencyForm"
+        android:label="fragment_indigency_form"
+        tools:layout="@layout/fragment_indigency_form" >
+        <action
+            android:id="@+id/action_indigencyForm_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>

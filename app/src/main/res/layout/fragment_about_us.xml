@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutUs">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/lightBlue"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_vector"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="About us"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About us"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barangay Guadalupe: A hub of diversity and unity, where history meets progress. We're dedicated to connecting our community through meaningful initiatives, fostering strong bonds, and empowering individuals for a brighter future. Join us as we work together to create a vibrant and inclusive environment for all residents."/>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/m"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/target"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/missionTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toEndOf="@+id/m"
+                android:text="Mission"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/missionTextView"
+                android:layout_toRightOf="@+id/m"
+                android:layout_marginLeft="10dp"
+                android:text="Mission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/v"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/vision"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vision"
+                android:layout_above="@+id/visionTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toEndOf="@+id/v"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/visionTextView"
+                android:layout_toRightOf="@+id/v"
+                android:layout_marginLeft="10dp"
+                android:text="Vision"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/g"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/target"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal"
+                android:layout_above="@+id/goalTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_toEndOf="@+id/g"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/goalTextView"
+                android:layout_toRightOf="@+id/g"
+                android:layout_marginLeft="10dp"
+                android:text="Goal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "83176267010",
+    "firebase_url": "https://barangay-guadalupe-6c51a-default-rtdb.firebaseio.com",
+    "project_id": "barangay-guadalupe-6c51a",
+    "storage_bucket": "barangay-guadalupe-6c51a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83176267010:android:77da9b9cbbc272e575b61b",
+        "android_client_info": {
+          "package_name": "com.app.barangayguadalupe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxPHdlEkG5yd7gsMaGhqmEAhblm8moKwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
